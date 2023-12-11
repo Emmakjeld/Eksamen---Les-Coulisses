@@ -1,0 +1,578 @@
+/*Generelle regler*/
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+body{
+    background-color: #ede9e2;
+}
+
+/*header*/
+a{
+    text-decoration: none;
+    color: #1A083F;
+}
+
+
+#headertop{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    font-size: 30pt;
+    font-family: 'sageregular';
+   src: url('sage-webfont.woff2') format('woff2'),
+         url('sage-webfont.woff') format('woff'),
+         url('sage-webfont.ttf') format('truetype'),
+         url('sage-webfont.svg#sageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    color: #1A083F;
+}
+
+#headerbund{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-family:'Montserrat', sans-serif;
+    
+}
+
+#headerbund nav{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+#headertop img{
+    width: 2%;
+    position: absolute;
+    left: 90%;
+    top: 4%;
+}
+
+
+header{
+    border-bottom: solid;
+    border-color: #1A083F;
+    border-width: 2px;
+}
+
+#menupunkter{
+    display: none;
+}
+
+/*Footer*/
+footer{
+    background-color: #624E43;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer h4{
+    font-family: 'sageregular';
+   src: url('sage-webfont.woff2') format('woff2'),
+         url('sage-webfont.woff') format('woff'),
+         url('sage-webfont.ttf') format('truetype'),
+         url('sage-webfont.svg#sageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    color: #EDE9E2;
+}
+
+footer p{
+    font-family:'Montserrat', sans-serif;
+    color: #EDE9E2;
+    margin-top: 1%;
+}
+
+
+footer section{
+    height: 50%;
+    width: 30%;
+    padding: 2%;
+}
+
+#skrivemail{
+    width: 45%;
+    background-color: white;
+    font-family:'Montserrat', sans-serif;
+    color: #1A083F;
+    padding: 2%;
+    margin-top: 3%;    
+}
+
+footer button{
+    width: 70%;
+    background-color:#1A083F;
+    padding: 7%;
+    color: #EDE9E2;
+    margin-left: -5.5%;
+    margin-top: 3%;
+    font-family: 'sageregular';
+    src: url('sage-webfont.woff2') format('woff2'),
+          url('sage-webfont.woff') format('woff'),
+          url('sage-webfont.ttf') format('truetype'),
+          url('sage-webfont.svg#sageregular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+
+/*main forside*/
+h1{
+    font-family: 'sageregular';
+   src: url('sage-webfont.woff2') format('woff2'),
+         url('sage-webfont.woff') format('woff'),
+         url('sage-webfont.ttf') format('truetype'),
+         url('sage-webfont.svg#sageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    color: #1A083F;
+    font-size: 9vw;
+}
+
+#inspiration{
+    display: flex;
+    margin-top: 2.5%; 
+    margin-left: 5%;  
+}
+
+#inspiration h1{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+
+#inspiration div{
+    display: flex;
+
+}
+
+#video_forside{
+    width: 30%;
+    height: 100%;
+    background-color:gray;
+    margin-top: 2.5%;
+}
+
+#fire_billeder{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#fire_billeder div:first-child{
+    width: 45%;
+    height: 45%;
+    background-color: gray;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+#fire_billeder div:nth-child(2){
+    width: 45%;
+    height: 45%;
+    background-color: gray;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+#fire_billeder div:nth-child(3){
+    width: 45%;
+    height: 45%;
+    background-color: gray;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+#fire_billeder div:last-child{
+    width: 45%;
+    height: 45%;
+    background-color: gray;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+h3{
+    font-family: 'sageregular';
+    src: url('sage-webfont.woff2') format('woff2'),
+          url('sage-webfont.woff') format('woff'),
+          url('sage-webfont.ttf') format('truetype'),
+          url('sage-webfont.svg#sageregular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     color: #1A083F;
+
+}
+
+p{
+    font-family:'Montserrat', sans-serif;
+    color: #1A083F;
+
+
+}
+
+.billedeogtekst{
+    display: flex;
+    margin-top: 2%;
+}
+
+#fire_artikler{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+#fire_artikler div{
+    width: 42%;
+    margin-left: 5%;
+}
+
+#fire_artikler div div:first-child{
+    width: 50%;
+}
+
+#fire_artikler img{
+    width: 100%;
+}
+
+#fire_artikler img:hover {
+    opacity: 0.5;
+}
+
+#mitlescoulisses{
+    background-color: white;
+    padding-bottom: 5%;
+}
+
+#mitlescoulisses h1{
+    font-family: 'sageregular';
+    src: url('sage-webfont.woff2') format('woff2'),
+         url('sage-webfont.woff') format('woff'),
+         url('sage-webfont.ttf') format('truetype'),
+         url('sage-webfont.svg#sageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    color: #1A083F;
+    font-size: 9vw;
+    text-align: center;
+    margin-top: 2.5%;
+    
+}
+
+#mitlescoulisses div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mitlescoulisses img{
+    width: auto;
+    height: fit-content;
+}
+
+#mitlescoulisses img:first-child{
+    width: 3%;
+}
+
+#mitlescoulisses img:last-child{
+    width: 3%;
+    transform: rotate(180deg);
+}
+
+#instagram h1{
+    text-align: center;
+    padding-top: 5%;
+}
+
+#instagram img{
+    width: 15%;
+    margin-left: 42%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+
+/*Artikler*/
+h2{
+    font-family: 'sageregular';
+    src: url('sage-webfont.woff2') format('woff2'),
+         url('sage-webfont.woff') format('woff'),
+         url('sage-webfont.ttf') format('truetype'),
+         url('sage-webfont.svg#sageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    color: #1A083F;
+    font-size: 1.8vw;
+}
+
+
+.tokort_artikel img{
+    width: 80%;  
+}
+
+.tokort_artikel{
+    display: flex; 
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.tokort_artikel section{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.tokort_artikel p{
+    margin-top: 2%;
+}
+
+.tokort_artikel div:first-child{
+    padding-left: 4%;
+}
+
+.tekst_hoejre{
+    margin-right: 8%;
+}
+
+#pladsholder{
+    width: 60%;
+}
+
+
+/*Artikelside*/
+#overskrift_artikelside{
+    padding: 5%;
+    text-align: center;
+}
+
+.artikelside_layout{
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    
+}
+
+.artikelside_layout img{
+    width: 70%;
+}
+
+/*Shop side*/
+#filtreringspunkter{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+#filtreringspunkter img{
+    width: 7%;
+    height: auto;
+}
+
+.shop_billeder{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shop_billeder:last-child{
+    margin-bottom: 3%;
+}
+
+.video_shop{
+    width: 35%;
+    height: 100%;
+}
+
+.video_shop video{
+    width: 100%;
+}
+
+.billeder_kvadrat{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.billeder_kvadrat div{
+    width: 40%;
+    padding: 5%;
+}
+
+.billeder_kvadrat div img{
+    width: 100%;
+}
+
+.billeder_kvadrat div:first-child{
+    margin-top: 10%;
+}
+
+.billeder_kvadrat div:nth-child(2){
+    margin-top: 10%;
+}
+
+.billeder_kvadrat div:first-child img:hover{
+    opacity: 0.5;
+}
+
+/*Købsside*/
+button{
+    width:20%;
+    background-color:#1A083F;
+    padding: 2%;
+    font-family: 'sageregular';
+    src: url('sage-webfont.woff2') format('woff2'),
+        url('sage-webfont.woff') format('woff'),
+        url('sage-webfont.ttf') format('truetype'),
+        url('sage-webfont.svg#sageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top: 3%;
+    margin-left:35%;
+    font-size: 1.2vw;
+    border: 2px solid #1A083F;
+    color: #EDE9E2;
+}
+      
+button:hover {
+    background-color: white;
+    color:#1A083F;
+}
+
+#koeb_glas{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#info{
+    padding: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+}
+
+#pris{
+    font-size: 1.5vw;
+}
+
+
+#produktinformation{
+   text-align: center;
+   padding: 15%;
+}
+
+#andre_har_set{
+    background-color: white;
+    width: 100%;
+}
+
+#andre_har_set div{
+display: flex;
+justify-content: space-evenly;
+padding-bottom: 3%;
+padding-top: 1%;
+width: 100%;
+}
+#andre_har_set div div{
+width: 25%;
+}
+
+#andre_har_set img{
+    width: 100%;
+}
+
+#andre_har_set h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#venstre_pil{
+    width: 5%;
+}
+
+#hoejre_pil{
+    width: 5%;
+    transform: rotate(180deg);
+
+}
+
+/*mobil*/
+@media screen and (max-width:900px) 
+{
+    #headermobil{
+        display: block;
+        width: 5%;
+    }
+    
+    #headerbund{
+        display: none;
+    }
+
+    #headertop{
+        display: none;
+    }
+
+    #kryds{
+        display: none;
+    }
+
+}
+
+/*laptop*/
+@media screen and (min-width:900px){
+    #headermobil{
+        display: none;
+    }
+}
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
