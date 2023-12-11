@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.33 25.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Lag_1-2" data-name="Lag 1">
+    <g>
+      <line class="cls-1" y1=".5" x2="53.33" y2=".5"/>
+      <line class="cls-1" y1="12.72" x2="53.33" y2="12.72"/>
+      <line class="cls-1" y1="24.94" x2="53.33" y2="24.94"/>
+    </g>
+  </g>
+</svg>
