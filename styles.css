@@ -18,7 +18,9 @@ a{
 
 #headertop{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 50%;
+    
     padding-top: 1%;
     font-size: 30pt;
     font-family: 'sageregular';
@@ -46,20 +48,21 @@ a{
     justify-content: space-between;
 }
 
-#headertop img{
-    width: 2%;
-    position: absolute;
-    left: 90%;
-    top: 4%;
-}
-
 
 header{
     border-bottom: solid;
     border-color: #1A083F;
     border-width: 2px;
+    
 }
 
+#ikoner{
+    width: 10%;
+    display: flex;
+}
+#ikoner img{
+    width: 50%;
+}
 #menupunkter{
     display: none;
 }
@@ -90,11 +93,11 @@ footer p{
 }
 
 
-footer section{
+/*footer section{
     height: 50%;
     width: 30%;
     padding: 2%;
-}
+}*/
 
 #skrivemail{
     width: 45%;
@@ -124,6 +127,26 @@ footer button{
 
 
 /*main forside*/
+#pilTilTop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    color:#EDE9E2;
+    font-size: 18px;
+    outline: none;
+    background-color: #1A083F;
+    padding: 1%;
+    border: 2px solid #1A083F;
+}
+
+#pilTilTop:hover{
+    background-color: white;
+    color:#1A083F;
+}
+
 h1{
     font-family: 'sageregular';
    src: url('sage-webfont.woff2') format('woff2'),
@@ -214,8 +237,6 @@ h3{
 p{
     font-family:'Montserrat', sans-serif;
     color: #1A083F;
-
-
 }
 
 .billedeogtekst{
@@ -231,9 +252,8 @@ p{
     margin-bottom: 5%;
 }
 
-#fire_artikler div{
-    width: 42%;
-    margin-left: 5%;
+#fire_artikler p{
+    font-size: 100%;
 }
 
 #fire_artikler div div:first-child{
@@ -251,6 +271,7 @@ p{
 #mitlescoulisses{
     background-color: white;
     padding-bottom: 5%;
+    padding-top: 1%;
 }
 
 #mitlescoulisses h1{
@@ -265,6 +286,7 @@ p{
     font-size: 9vw;
     text-align: center;
     margin-top: 2.5%;
+    padding-bottom: 1%;
     
 }
 
@@ -272,10 +294,11 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 #mitlescoulisses img{
-    width: auto;
+    /*width: auto;*/
     height: fit-content;
 }
 
@@ -286,6 +309,10 @@ p{
 #mitlescoulisses img:last-child{
     width: 3%;
     transform: rotate(180deg);
+}
+
+#mitlescoulisses img:nth-child(2), #mitlescoulisses img:nth-child(3), #mitlescoulisses img:nth-child(4){
+    width: 25%;
 }
 
 #instagram h1{
@@ -343,11 +370,6 @@ h2{
     margin-right: 8%;
 }
 
-#pladsholder{
-    width: 60%;
-}
-
-
 /*Artikelside*/
 #overskrift_artikelside{
     padding: 5%;
@@ -362,10 +384,19 @@ h2{
     
 }
 
-.artikelside_layout img{
+.artikelside_layout p, .artikelside_layout h2, .artikelside_layout h3{
     width: 70%;
 }
 
+.artikelside_layout img{
+   width: 70%;
+}
+
+.pladsholder{
+    width: 60%;
+    height: 50%;
+    background-color: gray;
+}
 /*Shop side*/
 #filtreringspunkter{
     width: 40%;
@@ -458,13 +489,14 @@ button:hover {
 #koeb_glas{
     display: flex;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 4%;
+    margin-left: 4%;
 }
 
 #info{
     padding: 2%;
-    padding-right: 2%;
     margin-top: 5%;
+    background-color: aqua;
 }
 
 #pris{
@@ -504,21 +536,95 @@ width: 25%;
 }
 
 #venstre_pil{
-    width: 5%;
+    width: 7%;
+    margin-left: 40%;
 }
 
 #hoejre_pil{
-    width: 5%;
+    width: 7%;
     transform: rotate(180deg);
 
 }
 
+#glas_01{
+    width: 100%;
+}
+
+#glas_02{  
+    width: 100%
+}
+
+#glas_03{
+    width: 100%;
+}
+
+#billedekarussel_glas img{
+    padding: 2%;
+    
+
+}
+
+/*404-side*/
+#fejl-side{
+    display: flex;
+    justify-content: center;
+}
+
+#fejl-side img{
+    width: 90%;
+    margin-left:-5%;
+    
+}
+
+#fejl-side section{
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+#fejl-side section button{
+    width: 50%;
+    height: 20%;
+    margin-left: 0;
+}
+
+
 /*mobil*/
 @media screen and (max-width:900px) 
 {
+    /*Header mobil + burgermenu*/
     #headermobil{
         display: block;
-        width: 5%;
+        width: 30%;
+        padding: 2%;
+    }
+
+    #headermobil img{
+        width: 20%;
+    }
+
+    #menupunkter{
+        width: 100%;
+        font-size: 100%;
+        font-family:'Montserrat', sans-serif;
+        
+    }
+    #menupunkter a{
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+    
+    }
+
+    #menupunkter p{
+        border: solid;
+        border-color: #1A083F;
+        border-width: 1px;
+        background-color:white ;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        margin-top: 5%;
     }
     
     #headerbund{
@@ -529,18 +635,145 @@ width: 25%;
         display: none;
     }
 
-    #kryds{
-        display: none;
+    #headertop_mobil{
+        display: block;
+        font-family: 'sageregular';
+        src: url('sage-webfont.woff2') format('woff2'),
+        url('sage-webfont.woff') format('woff'),
+        url('sage-webfont.ttf') format('truetype'),
+        url('sage-webfont.svg#sageregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        font-size: 3vw;
     }
 
+    #kryds{
+        display: none;
+       
+    }
+
+    /*Footer*/
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        /*flex-direction: column;*/
+    }
+
+    footer section{
+        width: 100%;
+    }
+
+    footer section h4, footer section p{
+        padding-left: 2%;
+    }
+
+    footer section{
+        padding-top: 3%;
+    }
+
+    footer button{
+        width: 10%;
+        margin-left:2%;
+        
+    }
+
+    #skrivemail{
+        width: 35%;
+        background-color: white;
+        font-family:'Montserrat', sans-serif;
+        color: #1A083F;
+        padding: 2%;
+        margin-top: 3%;    
+        margin-left: 2%;
+    }
+    
+    /*Forsiden*/
+    #fire_artikler{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .billedeogtekst div:first-child{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .billedeogtekst div{
+        padding-top: 5%;
+    }
+
+    #fire_artikler div{
+        width: 90%;
+    }
+
+    #fire_artikler p{
+        font-size: 80%;
+    }
+
+    /*artikler*/
+    .tokort_artikel p{
+    font-size: 2%;
+    }
+
+
+    /*købsside*/
+    #koeb_glas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #billedekarussel_glas img{
+        padding: 2%;
+    }
+
+    #venstre_pil{
+        width: 2%;
+        
+    }
+    
+    #hoejre_pil{
+        width: 2%;
+        transform: rotate(180deg);
+    
+    }
+
+
 }
+
+
+
+
 
 /*laptop*/
 @media screen and (min-width:900px){
+   /*Header*/
     #headermobil{
         display: none;
     }
+
+    #headertop_mobil{
+        display: none;
+    }
+
+    /*Footer*/
+    footer section{
+        height: 50%;
+        width: 30%;
+        padding: 2%;
+    }
+    
+    /*Forside*/
+    #fire_artikler div{
+        width: 42%;
+        margin-left: 5%;
+    }
 }
+
+
     
 
 

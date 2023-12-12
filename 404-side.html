@@ -13,8 +13,14 @@
     <header>
         <div id="headertop">
             <a href="index.html">Les Coulisses</a>
-            <img src="img/Soege_ikon-kopi.svg" alt="søge ikon">
-            <img src="img/Kurv_ikon-kopi.svg" alt="kurv ikon">
+            <div id="ikoner">
+                <img src="img/Soege_ikon-kopi.svg" alt="søge ikon">
+                <img src="img/Kurv_ikon-kopi.svg" alt="kurv ikon">
+            </div>
+       </div>
+
+       <div id="headertop_mobil">
+            <a href="index.html">Les Coulisses</a>
        </div>
 
        <div id="headerbund">
@@ -23,18 +29,47 @@
                 <a href="artikler.html">Artikler</a>
                 <a href="404-side.html">Om Os</a>
             </nav>
+
+            <div id="headertop_mobil">
+                <a href="index.html">Les Coulisses</a>
+           </div>
         </div>
+        
+
+        <div id="headermobil">
+            <img id="burgermenu" src="img/burger.svg" alt="burger ikon">
+            <img id="kryds" src="img/kryds.svg" alt="kryds ikon">
+
+            <div id="menupunkter">
+                <p>Søg her...</p>
+                <a href="shop.html">Shop</a>
+                <a href="artikler.html">Artikler</a>
+                <a href="404-side.html">Om Os</a>
+            </div>
+        </div>
+    
     </header>
 
     <main>
+
+        <button id="pilTilTop">Til Top</button>
+
         <div id="fejl-side">
-            <img src="img/404-side.gif" alt="Vase vælter">
+
+            <section>
+                <h2>Du har vist shoppet for meget</h2>
+                <h2>Gå tilbage til forsiden her</h2>
+
+                <button onclick="window.location.href='index.html'">Tilbage til forsiden</button>
+
+            </section>
+
+            <div>
+                <img src="img/404-side.gif" alt="Vase vælter">
+            </div>
         </div>
 
-        <h2>Du har vist shoppet for meget</h2>
-        <h2>Gå tilbage til forsiden her</h2>
-
-        <button>Tilbage til forsiden</button>
+        
     </main>
 
     <footer>
