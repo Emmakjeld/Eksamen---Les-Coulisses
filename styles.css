@@ -18,16 +18,11 @@ a{
 
 #headertop{
     display: flex;
-    justify-content: space-between;
-    width: 50%;
-    
+    justify-content: center;
+    width: 100%;
     padding-top: 1%;
     font-size: 30pt;
     font-family: 'sageregular';
-   src: url('sage-webfont.woff2') format('woff2'),
-         url('sage-webfont.woff') format('woff'),
-         url('sage-webfont.ttf') format('truetype'),
-         url('sage-webfont.svg#sageregular') format('svg');
     font-weight: normal;
     font-style: normal;
     color: #1A083F;
@@ -52,16 +47,18 @@ a{
 header{
     border-bottom: solid;
     border-color: #1A083F;
-    border-width: 2px;
-    
+    border-width: 2px;  
+}
+
+
+#ikoner img{
+    width: 20%;
+
 }
 
 #ikoner{
-    width: 10%;
-    display: flex;
-}
-#ikoner img{
-    width: 50%;
+    position: absolute;
+    left: 90%
 }
 #menupunkter{
     display: none;
@@ -77,10 +74,6 @@ footer{
 
 footer h4{
     font-family: 'sageregular';
-   src: url('sage-webfont.woff2') format('woff2'),
-         url('sage-webfont.woff') format('woff'),
-         url('sage-webfont.ttf') format('truetype'),
-         url('sage-webfont.svg#sageregular') format('svg');
     font-weight: normal;
     font-style: normal;
     color: #EDE9E2;
@@ -90,14 +83,8 @@ footer p{
     font-family:'Montserrat', sans-serif;
     color: #EDE9E2;
     margin-top: 1%;
+    font-size: 100%;
 }
-
-
-/*footer section{
-    height: 50%;
-    width: 30%;
-    padding: 2%;
-}*/
 
 #skrivemail{
     width: 45%;
@@ -108,23 +95,20 @@ footer p{
     margin-top: 3%;    
 }
 
-footer button{
-    width: 70%;
+
+footer section button{
+    width: 30%;
     background-color:#1A083F;
-    padding: 7%;
+    padding: 2%;
     color: #EDE9E2;
-    margin-left: -5.5%;
+    margin-left: -0.5%;
     margin-top: 3%;
     font-family: 'sageregular';
-    src: url('sage-webfont.woff2') format('woff2'),
-          url('sage-webfont.woff') format('woff'),
-          url('sage-webfont.ttf') format('truetype'),
-          url('sage-webfont.svg#sageregular') format('svg');
-     font-weight: normal;
-     font-style: normal;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
 
 }
-
 
 /*main forside*/
 #pilTilTop{
@@ -149,10 +133,6 @@ footer button{
 
 h1{
     font-family: 'sageregular';
-   src: url('sage-webfont.woff2') format('woff2'),
-         url('sage-webfont.woff') format('woff'),
-         url('sage-webfont.ttf') format('truetype'),
-         url('sage-webfont.svg#sageregular') format('svg');
     font-weight: normal;
     font-style: normal;
     color: #1A083F;
@@ -222,14 +202,14 @@ h1{
     margin-top: 2.5%;
 }
 
+#fire_billeder img{
+    width: 100%;
+}
+
 h3{
     font-family: 'sageregular';
-    src: url('sage-webfont.woff2') format('woff2'),
-          url('sage-webfont.woff') format('woff'),
-          url('sage-webfont.ttf') format('truetype'),
-          url('sage-webfont.svg#sageregular') format('svg');
-     font-weight: normal;
-     font-style: normal;
+    font-weight: normal;
+    font-style: normal;
      color: #1A083F;
 
 }
@@ -276,10 +256,6 @@ p{
 
 #mitlescoulisses h1{
     font-family: 'sageregular';
-    src: url('sage-webfont.woff2') format('woff2'),
-         url('sage-webfont.woff') format('woff'),
-         url('sage-webfont.ttf') format('truetype'),
-         url('sage-webfont.svg#sageregular') format('svg');
     font-weight: normal;
     font-style: normal;
     color: #1A083F;
@@ -331,14 +307,9 @@ p{
 /*Artikler*/
 h2{
     font-family: 'sageregular';
-    src: url('sage-webfont.woff2') format('woff2'),
-         url('sage-webfont.woff') format('woff'),
-         url('sage-webfont.ttf') format('truetype'),
-         url('sage-webfont.svg#sageregular') format('svg');
     font-weight: normal;
     font-style: normal;
     color: #1A083F;
-    font-size: 1.8vw;
 }
 
 
@@ -376,27 +347,22 @@ h2{
     text-align: center;
 }
 
-.artikelside_layout{
+.artikel_layout{
     display: flex;
-    width: 100%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    
+    margin-bottom: 5%;
 }
 
-.artikelside_layout p, .artikelside_layout h2, .artikelside_layout h3{
-    width: 70%;
-}
-
-.artikelside_layout img{
-   width: 70%;
-}
-
-.pladsholder{
+.artikel_layout img{
     width: 60%;
-    height: 50%;
-    background-color: gray;
+    margin-left: 25%;
 }
+
+.artikel_layout section{
+    padding: 4%;
+    margin-right: 5%;
+}
+
+
 /*Shop side*/
 #filtreringspunkter{
     width: 40%;
@@ -457,7 +423,7 @@ h2{
     margin-top: 10%;
 }
 
-.billeder_kvadrat div:first-child img:hover{
+.billeder_kvadrat div img:hover{
     opacity: 0.5;
 }
 
@@ -467,10 +433,6 @@ button{
     background-color:#1A083F;
     padding: 2%;
     font-family: 'sageregular';
-    src: url('sage-webfont.woff2') format('woff2'),
-        url('sage-webfont.woff') format('woff'),
-        url('sage-webfont.ttf') format('truetype'),
-        url('sage-webfont.svg#sageregular') format('svg');
     font-weight: normal;
     font-style: normal;
     text-align: center;
@@ -488,25 +450,28 @@ button:hover {
 
 #koeb_glas{
     display: flex;
-    width: 100%;
+    width: 80%;
     margin-top: 4%;
-    margin-left: 4%;
+    margin-left: 10%;
 }
 
 #info{
     padding: 2%;
     margin-top: 5%;
-    background-color: aqua;
+    margin-left: 1%;
+    font-size: 100%;
+    align-items: center;
 }
 
 #pris{
-    font-size: 1.5vw;
+    font-size: 100%;
 }
 
 
 #produktinformation{
    text-align: center;
    padding: 15%;
+   font-size: 100%;
 }
 
 #andre_har_set{
@@ -537,12 +502,13 @@ width: 25%;
 
 #venstre_pil{
     width: 7%;
-    margin-left: 40%;
+    margin-left: 28%;
 }
 
 #hoejre_pil{
     width: 7%;
     transform: rotate(180deg);
+    margin-left: 20%;
 
 }
 
@@ -635,13 +601,9 @@ width: 25%;
         display: none;
     }
 
-    #headertop_mobil{
+    .headertop_mobil{
         display: block;
         font-family: 'sageregular';
-        src: url('sage-webfont.woff2') format('woff2'),
-        url('sage-webfont.woff') format('woff'),
-        url('sage-webfont.ttf') format('truetype'),
-        url('sage-webfont.svg#sageregular') format('svg');
         font-weight: normal;
         font-style: normal;
         display: flex;
@@ -673,9 +635,10 @@ width: 25%;
         padding-top: 3%;
     }
 
-    footer button{
-        width: 10%;
+    footer section button{
+        width: 20%;
         margin-left:2%;
+        margin-bottom: 2%;
         
     }
 
@@ -724,6 +687,7 @@ width: 25%;
     #koeb_glas{
         display: flex;
         flex-wrap: wrap;
+        margin-left: 8%;
     }
 
     #billedekarussel_glas img{
@@ -731,21 +695,30 @@ width: 25%;
     }
 
     #venstre_pil{
-        width: 2%;
+        width: 8%;
+        margin-left: 30%;
         
     }
     
     #hoejre_pil{
-        width: 2%;
+        width: 8%;
+        margin-left: 20%;
         transform: rotate(180deg);
     
     }
 
+    /*Fejl-side*/
+    #fejl-side{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5%;
+    }
+
+    #fejl-side img{
+        margin-left: -5%;
+    }
 
 }
-
-
-
 
 
 /*laptop*/
@@ -755,7 +728,7 @@ width: 25%;
         display: none;
     }
 
-    #headertop_mobil{
+    .headertop_mobil{
         display: none;
     }
 

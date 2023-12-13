@@ -1,0 +1,7 @@
+User agent: *
+Allow: /index.html
+Allow: /artikelside.html
+Allow: /artikler.html
+Allow: /404-side.html
+Allow: /shop.html
+Allow: /koebsside.html

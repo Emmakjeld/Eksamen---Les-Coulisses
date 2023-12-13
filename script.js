@@ -1,3 +1,4 @@
+//Lavet af Nikoline og Emma
 //Burgermenu
 //Trykker på streger - kryds kommer frem
 document.getElementById("burgermenu").addEventListener("click", vismenu);
