@@ -32,8 +32,8 @@ const venstrePil = document.getElementById("venstre_pil");
 const karussel = [glas_01, glas_02, glas_03];
 
 if (karussel[0] != null) {
-    
 
+    
     //Et billede bliver vist ad gangen
     karussel[0].style.display = "block";
     karussel[1].style.display = "none";
@@ -60,6 +60,7 @@ function forrigeBillede(){
     karussel[0].style.display = "block";
 }
 
+
 //Pil til top funktion
 //Henter id'et fra HTML
 const tilTop = document.getElementById("pilTilTop");
@@ -83,6 +84,8 @@ tilTop.onclick = function (){topFunction()}
 function topFunction(){
     document.documentElement.scrollTop = 0
 }
+
+//Kilde: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp (Senest besøgt d. 14/12-2023)
 
 
 
